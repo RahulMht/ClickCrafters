@@ -3,60 +3,82 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>clickcrafters</title>
+<title>clickcrafters — Manage your TikTok from an AI assistant</title>
 <style>
-  :root {
-    color-scheme: light;
-    --accent: #fe2c55;
-    --text: #1a1a1a;
-    --muted: #666;
-    --line: #e7e7e7;
-  }
-  body {
-    font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    max-width: 760px;
-    margin: 40px auto;
-    padding: 0 20px;
-    color: var(--text);
-    line-height: 1.6;
-  }
-  h1 {
-    font-size: 2rem;
-    margin-bottom: 0.4rem;
-  }
-  a {
-    color: var(--accent);
-  }
-  .muted {
-    color: var(--muted);
-  }
-  .links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 28px;
-    padding-top: 24px;
-    border-top: 1px solid var(--line);
-  }
-  .links a {
-    display: inline-flex;
-    align-items: center;
-    min-height: 40px;
-    padding: 0 14px;
-    border: 1px solid var(--line);
-    border-radius: 6px;
-    text-decoration: none;
-  }
+  :root{--pink:#fe2c55;--ink:#12131a;--muted:#5b5f6b;--bg:#ffffff;--soft:#f6f7f9}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+  .wrap{max-width:860px;margin:0 auto;padding:0 24px}
+  header{padding:28px 0;display:flex;align-items:center;justify-content:space-between}
+  .logo{font-weight:800;font-size:1.25rem;letter-spacing:-.02em}
+  .logo span{color:var(--pink)}
+  nav a{color:var(--muted);text-decoration:none;margin-left:22px;font-size:.95rem}
+  nav a:hover{color:var(--ink)}
+  .hero{padding:64px 0 48px;text-align:center}
+  .hero h1{font-size:2.6rem;line-height:1.15;margin:0 0 16px;letter-spacing:-.03em}
+  .hero p{font-size:1.15rem;color:var(--muted);max-width:620px;margin:0 auto 28px}
+  .badge{display:inline-block;background:var(--soft);color:var(--muted);font-size:.8rem;padding:6px 12px;border-radius:999px;margin-bottom:22px}
+  .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;padding:24px 0 56px}
+  .card{background:var(--soft);border-radius:14px;padding:22px}
+  .card h3{margin:0 0 8px;font-size:1.05rem}
+  .card p{margin:0;color:var(--muted);font-size:.95rem}
+  .how{padding:8px 0 56px}
+  .how h2{font-size:1.5rem;letter-spacing:-.02em}
+  ol{padding-left:20px;color:var(--muted)}
+  ol li{margin:10px 0}
+  footer{border-top:1px solid #eee;padding:28px 0;color:var(--muted);font-size:.9rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+  footer a{color:var(--muted)}
 </style>
 </head>
 <body>
-<h1>clickcrafters</h1>
-<p class="muted">TikTok account integration for AI assistants through MCP and the TikTok Developer APIs.</p>
-<p>clickcrafters helps authorized users connect their TikTok account, review account information, inspect content and analytics, and create or publish content through supported AI assistant workflows.</p>
-<div class="links">
-  <a href="/privacy">Privacy Policy</a>
-  <a href="/terms">Terms of Service</a>
+<div class="wrap">
+  <header>
+    <div class="logo">click<span>crafters</span></div>
+    <nav>
+      <a href="/terms">Terms</a>
+      <a href="/privacy">Privacy</a>
+      <a href="mailto:anas@maznyadeal.com">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="badge">TikTok integration for AI assistants</div>
+    <h1>Manage your TikTok, straight from your AI assistant.</h1>
+    <p>clickcrafters securely connects your TikTok account to an AI assistant (such as Claude) so you can review your content, check analytics, and publish posts — all through a simple chat.</p>
+  </section>
+
+  <section class="features">
+    <div class="card">
+      <h3>Secure sign-in</h3>
+      <p>Connect using TikTok's official login. You approve exactly what clickcrafters can access, and can revoke anytime.</p>
+    </div>
+    <div class="card">
+      <h3>See your content &amp; stats</h3>
+      <p>Pull your profile, video list, and performance metrics so your assistant can answer questions about how you're doing.</p>
+    </div>
+    <div class="card">
+      <h3>Publish &amp; schedule</h3>
+      <p>Ask your assistant to post or schedule a video to your own account — nothing happens without your explicit request.</p>
+    </div>
+  </section>
+
+  <section class="how">
+    <h2>How it works</h2>
+    <ol>
+      <li>Connect your TikTok account through TikTok's secure authorization.</li>
+      <li>Ask your assistant to show your videos, stats, or drafts.</li>
+      <li>Tell it what to post — clickcrafters sends it to TikTok for you.</li>
+    </ol>
+  </section>
+
+  <footer>
+    <div>© 2026 clickcrafters</div>
+    <div>
+      <a href="/terms">Terms of Service</a> &nbsp;·&nbsp;
+      <a href="/privacy">Privacy Policy</a> &nbsp;·&nbsp;
+      <a href="mailto:anas@maznyadeal.com">anas@maznyadeal.com</a>
+    </div>
+  </footer>
 </div>
 </body>
 </html>
-
